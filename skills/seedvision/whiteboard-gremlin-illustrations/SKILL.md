@@ -27,7 +27,7 @@ It guarantees:
 
 ## Visual DNA
 
-The default style is **deadpan whiteboard weirdness**:
+The default style is **deadpan editorial sketch weirdness**:
 
 - 16:9 horizontal canvas.
 - Pure white background.
@@ -35,10 +35,27 @@ The default style is **deadpan whiteboard weirdness**:
 - Lots of empty space; subject usually occupies 35%-60% of the frame.
 - Small accent marks in red, orange, and blue.
 - English handwritten labels only; keep labels short, usually 1-4 words.
-- A tiny recurring operator character, called the **Gremlin**, performs the core action.
+- A tiny recurring operator figure, called the **Gremlin**, performs the core action.
 - Product-sketch energy: clear, rough, clever, not polished.
+- It should look like a loose editorial illustration made by a sharp human with a black pen, not a programmatic SVG diagram.
 
-The Gremlin is not a cute mascot. It is a small odd worker inside the system: serious, blank, slightly overcommitted, and doing the awkward job that makes the metaphor work.
+The Gremlin is not a cute mascot and not a black blob with stick legs. It is a tiny, odd, ink-like operator inside the system: serious, blank, slightly overcommitted, and doing the awkward job that makes the metaphor work.
+
+Good visual target:
+
+- Thin, slightly imperfect linework.
+- Mostly black-and-white.
+- One strange physical situation, not a diagram of a process.
+- 0-4 tiny labels, only when labels help.
+- Editorial article-body illustration, not a UI, chart, slide, or clip-art scene.
+
+Bad visual target:
+
+- Computer-drawn SVG-looking geometry.
+- Smooth circles, rectangles, and arrows arranged like a flowchart.
+- Labels on every object.
+- Cute mascot energy.
+- Two characters posing beside a diagram instead of doing the metaphorical work.
 
 ## Do Not Copy
 
@@ -88,7 +105,7 @@ Short article: 1-3 shots. Long article: 4-7 shots. Do not exceed 8 unless the us
 
 ### 3. Choose one structure type
 
-Use one primary structure per image:
+Use one primary structure per image. These are thinking aids, not visual templates:
 
 - **Input → machine → output:** raw material becomes something useful.
 - **Before / after:** chaos becomes leverage, manual becomes automated, vague becomes testable.
@@ -132,6 +149,8 @@ If the image still works perfectly after removing the Gremlin, rewrite it.
 
 Use one prompt per image. Never combine the whole shot list into a grid unless the user asks for a contact sheet.
 
+Use an actual image model when generating. If the image-generation backend fails, report the failure and save the prompt; do **not** fake the result with a hand-coded SVG fallback. SVG fallbacks are useful for diagrams, but they do not test this illustration skill.
+
 Default generation constraints:
 
 - 16:9 horizontal.
@@ -141,6 +160,7 @@ Default generation constraints:
 - Short English handwritten labels.
 - No title text in the top-left.
 - No dense flowchart.
+- No synthetic SVG/diagram look.
 - No glossy vector art.
 - No app screenshots.
 - No fake UI.
@@ -169,10 +189,10 @@ If it fails, regenerate with fewer elements and a clearer Gremlin action.
 Create one standalone 16:9 horizontal editorial illustration for an English article.
 
 Style:
-Pure white background. Minimal black hand-drawn line art with slight wobble. Sparse red, orange, and blue handwritten accent notes. Lots of negative space. Rough whiteboard/product-sketch energy. Clever, deadpan, slightly absurd, but clean and readable.
+Pure white background. Minimal black hand-drawn pen line art with slight wobble. Sparse red, orange, and blue handwritten accent notes. Lots of negative space. Rough editorial whiteboard/product-sketch energy. Clever, deadpan, slightly absurd, but clean and readable. Make it feel like a human drew a weird article illustration, not like a generated SVG flowchart.
 
 Recurring original character:
-Include one tiny black-and-white "Gremlin" operator: a small irregular ink-like worker with tiny dot eyes and thin limbs, blank serious expression, not cute, not a mascot, not a known character. The Gremlin must perform the core conceptual action.
+Include one tiny black-and-white "Gremlin" operator: a small irregular ink-like worker with subtle dot eyes and thin limbs, blank serious expression, not cute, not a mascot, not a known character, not a black emoji/blob. The Gremlin must perform the core conceptual action.
 
 Theme:
 {theme}
@@ -196,7 +216,7 @@ Color rules:
 Black for main sketch and character. Orange for path/flow/motion. Red for risk/problem/result. Blue for system feedback or side notes.
 
 Constraints:
-One image explains one idea. Keep subject around 35%-60% of the canvas. Use at most 3-6 short labels. Do not include a big title. Do not write the structure type. Do not create a PPT infographic, dense flowchart, corporate vector illustration, cute mascot poster, children’s book style, realistic UI, or complex technical architecture. Invent a fresh metaphor for this specific content.
+One image explains one idea. Keep subject around 35%-60% of the canvas. Use at most 0-4 short labels. Do not include a big title. Do not write the structure type. Do not create a PPT infographic, dense flowchart, corporate vector illustration, synthetic SVG diagram, cute mascot poster, children’s book style, realistic UI, or complex technical architecture. Invent a fresh metaphor for this specific content.
 ```
 
 ## Output Format
@@ -233,6 +253,7 @@ Optional/regenerate candidate: {which one and why, if any}
 - Making a generic AI/network/robot illustration.
 - Creating a formal chart with too many arrows.
 - Turning the Gremlin into a cute brand mascot.
+- Hand-coding a fake SVG test output and calling it a generated illustration.
 - Using long labels or full sentence explanations in the image.
 - Copying another creator's sample compositions or named IP.
 - Making every shot use the same machine/funnel/bridge metaphor.
