@@ -1,6 +1,0 @@
-interface:
-  display_name: "Whiteboard Gremlin Illustrations"
-  short_description: "English-first deadpan whiteboard illustrations for AI/product/workflow articles"
-  default_prompt: "Use $whiteboard-gremlin-illustrations to create a shot list and generate clean 16:9 English editorial illustrations for this article."
-policy:
-  allow_implicit_invocation: true
