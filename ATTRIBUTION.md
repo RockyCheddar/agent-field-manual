@@ -24,3 +24,11 @@
 - Imported commit: `bb0c9ab4ee596d546f2965222e0ec8c2a097ae53`
 - Local source notes: `sources/every-compound-engineering/SOURCE.md`
 
+## Addy Osmani Agent Skills
+
+- Repo: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+- Author/owner: Addy Osmani
+- License: MIT
+- Imported commit: `d187883b7d761265309cdcc0f202cc76b4b3fb06`
+- Local source notes: `sources/addyosmani-agent-skills/SOURCE.md`
+

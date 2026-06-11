@@ -30,6 +30,7 @@ This repo is designed as an operator-grade library, not a prompt dump. It keeps 
 | gstack | [garrytan/gstack](https://github.com/garrytan/gstack) | MIT | `cab774cced06` | 54 |
 | Matt Pocock Skills | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT | `aaf2453fbdfe` | 29 |
 | Every Compound Engineering Plugin | [everyinc/compound-engineering-plugin](https://github.com/everyinc/compound-engineering-plugin) | MIT | `bb0c9ab4ee59` | 40 |
+| Addy Osmani Agent Skills | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | `d187883b7d76` | 24 |
 
 
 ## Skill metadata standard

@@ -57,6 +57,15 @@ SOURCES = [
         description="Compound engineering Claude Code plugin: skills and agents that make each engineering unit easier than the last.",
         raw_skill_globs=("plugins/*/skills/*/SKILL.md", "tests/skills/*/SKILL.md"),
     ),
+    Source(
+        id="addyosmani-agent-skills",
+        name="Addy Osmani Agent Skills",
+        owner="Addy Osmani",
+        repo="addyosmani/agent-skills",
+        url="https://github.com/addyosmani/agent-skills",
+        description="A practical agent skills library covering specs, testing, code quality, context engineering, browser testing, launch readiness, and software delivery workflows.",
+        raw_skill_globs=("skills/*/SKILL.md",),
+    ),
 ]
 
 
